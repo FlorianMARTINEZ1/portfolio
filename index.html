@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="présentation" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -15,22 +16,30 @@
     <header>
         <nav>
             <div>
-                <p>Element 1</p>
+                <a href="#présentation">
+                    <p>Présentation</p>
+                </a>
             </div>
             <div>
-                <p>Element 2</p>
+                <a href="#projets">
+                    <p>Projets</p>
+                </a>
             </div>
             <div>
-                <p>Element 3</p>
+                <a href="#compétences">
+                    <p>Compétences</p>
+                </a>
             </div>
         </nav>
     </header>
     <main>
         <div class="container presentation shadow">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore aliquid enim esse itaque quia sunt minus quasi debitis quidem veritatis? Minus incidunt nam impedit minima accusantium quae ex, quo alias, iste praesentium aliquid voluptatibus. Architecto
-            accusamus quo, distinctio aliquid autem aspernatur minus reiciendis accusantium cupiditate quibusdam in eveniet rerum maiores placeat earum! Ea error earum repudiandae praesentium quibusdam minima, perspiciatis at velit voluptas ratione laudantium
-            possimus provident alias omnis? A, accusamus, ipsa sed deserunt nobis voluptatibus repellendus atque fugiat modi voluptatem architecto facilis totam labore! Saepe sint consequuntur mollitia, aut tenetur odio assumenda quaerat delectus, cupiditate
-            enim quia aliquid reprehenderit.
+            <h2>Présentation</h2>
+            Bonjour, je m’appelle <span class="highlight">Florian Martinez</span>, je suis passionné par l’informatique depuis mon plus jeune âge grâce au Minitel. L’apparition des ordinateurs m’a rendu curieux du fonctionnement de leurs interfaces et
+            m’a donné envie de connaître leurs fonctionnements. J’ai donc orienté mes études dans le domaine de l’informatique en obtenant un <span class="highlight">Bac STI2D option Système d’Information et Numérique</span>. Suite à ce diplôme, j’ai
+            réalisé un <span class="highlight">DUT Informatique et Gestion</span> à l’IUT de Montpellier. C’est pendant ce diplôme que j’ai décidé de m’orienter vers le développement web et application. J’ai réalisé des projets tels que le Triple Triad
+            ou bien le Dominion qui m’ont conforté dans mon projet professionnel. Aujourd’hui je prépare une <span id="projets" class="highlight">Licence professionnel « Assistant chef de projet informatique, développement d’application e-business » </span>afin
+            de devenir développeur web.
         </div>
         <div class="projet container">
             <div class="tripletriad card shadow">
@@ -38,9 +47,11 @@
                     <img src="img/TT8-game.png" alt="">
                 </div>
                 <div class="contentBx">
-                    <h2>Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi perferendis ipsum quis aut enim nulla, harum provident soluta optio. Totam.</p>
-                    <a href=""><span>Read more</span></a>
+                    <h2>Triple Triad</h2>
+                    <p>Le Triple Triad est un projet qui est la reconstitution du jeu du même nom présent d'en Final Fantasy VIII. Ce projet, réalisé en groupe de 4 sur une durée de 3 mois, a été développé pendant ma deuxième année d'IUT Informatique et
+                        Gestion. Il a été développé en Javascript et PHP principalement et l'interface a été faite en HTML et CSS.
+                    </p>
+                    <a href="./TT8/TripleTriad.html"><span>Démo</span></a>
                 </div>
             </div>
             <div class="dominion card shadow">
@@ -48,9 +59,8 @@
                     <img src="img/dominion.png" alt="">
                 </div>
                 <div class="contentBx">
-                    <h2>Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi perferendis ipsum quis aut enim nulla, harum provident soluta optio. Totam.</p>
-                    <a href=""><span>Read more</span></a>
+                    <h2>Dominion</h2>
+                    <p>Le projet Dominion est la réalisation du jeu de société Dominion en format numérique. Ce projet a été développé en Java, en groupe de 4.</p>
                 </div>
             </div>
             <div class="conquest card shadow">
@@ -58,14 +68,13 @@
                     <img src="img/conquest.png" alt="">
                 </div>
                 <div class="contentBx">
-                    <h2>Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi perferendis ipsum quis aut enim nulla, harum provident soluta optio. Totam.</p>
-                    <a href=""><span>Read more</span></a>
+                    <h2>Conquest</h2>
+                    <p>Le projet Conquest est une implémentation du jeu Microscope qui est un puzzle du jeu The 7th Gate. Ce projet a été développé en Jave et en groupe de 3.</p>
                 </div>
             </div>
         </div>
-        <div class="container experience shadow">
-            <h2>Expériences</h2>
+        <div id="compétences" class="container competences shadow">
+            <h2>Compétences</h2>
             <div class="skills">
                 <div class="left_part">
                     <div class="gradient_border">
@@ -77,21 +86,15 @@
                                 </div>
                             </div>
                             <div class="skill">
-                                <h3>Javascript</h3>
+                                <h3>HTML</h3>
                                 <div class="skill_bar">
-                                    <div class="js_skill"></div>
+                                    <div class="html_skill"></div>
                                 </div>
                             </div>
                             <div class="skill">
-                                <h3>Javascript</h3>
+                                <h3>CSS</h3>
                                 <div class="skill_bar">
-                                    <div class="js_skill"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <h3>Javascript</h3>
-                                <div class="skill_bar">
-                                    <div class="js_skill"></div>
+                                    <div class="css_skill"></div>
                                 </div>
                             </div>
                         </div>
@@ -99,35 +102,64 @@
                 </div>
                 <div class="right_part">
                     <div class="skill">
-                        <h3>Javascript</h3>
+                        <h3>PHP</h3>
                         <div class="skill_bar">
-                            <div class="js_skill">80%</div>
+                            <div class="php_skill"></div>
                         </div>
                     </div>
                     <div class="skill">
-                        <h3>Javascript</h3>
+                        <h3>SQL - PLSQL</h3>
                         <div class="skill_bar">
-                            <div class="js_skill"></div>
+                            <div class="sql_skill"></div>
                         </div>
                     </div>
                     <div class="skill">
-                        <h3>Javascript</h3>
+                        <h3>Java</h3>
                         <div class="skill_bar">
-                            <div class="js_skill"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <h3>Javascript</h3>
-                        <div class="skill_bar">
-                            <div class="js_skill"></div>
+                            <div class="jv_skill"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="expériences" class="container shadow experience">
+            <h2>Expériences</h2>
+            <div class="exp_box">
+                <div class="exp">
+                    <h3>Labo'Sud</h3>
+                    <h5>2017-2018 / 2018-2019</h5>
+                    <p>En tant que coursier, j'étais en charge de la transmission de prélèvement entre différent laboratoire. J'ai du apprendre à travailler en total autonomie car j'étais seul au volant du véhicule de la société.</p>
+                </div>
+            </div>
+            <div class="exp_box">
+                <div class="exp">
+                    <h3>Kid's Paradise</h3>
+                    <h5>04/08/2019 - 1/09/2019</h5>
+                    <p>En tant que surveillant, j'étais en charge de la régulation des personnes sur un même toboggan, de la communication des consignes de sécurité ainsi que leurs application.</p>
+                </div>
+            </div>
+            <div class="exp_box">
+                <div class="exp">
+                    <h3>Alionax</h3>
+                    <h5>15/05/2020 - 3/07/2020</h5>
+                    <p>Stagiaire au sein de l'entreprise, j'étais en charge de la maintenance d'un site pour l'entreprise.</p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
+        <div class="contact shadow">
+            <div class="git">
+                <a href="https://github.com/FlorianMARTINEZ1"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+            <div class="lk">
+                <a href="https://www.linkedin.com/in/florian-martinez-7259b3170/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            </div>
+            <div class="mail">
+                <a href="mailto:florian_martinez1@outlook.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+            </div>
 
+        </div>
     </footer>
 </body>
 

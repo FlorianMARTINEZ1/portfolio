@@ -9,8 +9,15 @@
     font-family: Arial, sans-serif;
 }
 
-header {
-    margin-bottom: 0%;
+header div {
+    height: 40px;
+    width: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+header div a {
+    line-height: 40px;
 }
 
 #menuDroite {

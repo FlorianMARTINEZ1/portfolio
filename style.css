@@ -6,9 +6,12 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #ebf5fc;
-    min-height: 300vh;
 }
 
 header {
@@ -49,6 +52,12 @@ header nav div p {
     font-size: 25px;
 }
 
+header nav div a {
+    height: 100%;
+    text-decoration: none;
+    color: #32a3b1;
+}
+
 header nav div:hover {
     -webkit-box-shadow: -6px -6px 20px rgba(0, 0, 0, 0.1), 6px 6px 20px rgba(0, 0, 0, 0.1);
     box-shadow: -6px -6px 20px rgba(0, 0, 0, 0.1), 6px 6px 20px rgba(0, 0, 0, 0.1);
@@ -56,6 +65,7 @@ header nav div:hover {
 
 main {
     margin-top: 80px;
+    margin-bottom: 50px;
 }
 
 .container {
@@ -72,8 +82,17 @@ main {
 }
 
 .presentation {
-    padding: 20px;
+    padding: 30px;
     border-radius: 15px;
+}
+
+.presentation h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+span.highlight {
+    color: #32a3b1;
 }
 
 .projet {
@@ -95,6 +114,7 @@ main {
     padding: 40px 30px;
     background: #ebf5fc;
     border-radius: 40px;
+    min-height: 430px;
 }
 
 .container .card:hover {
@@ -116,7 +136,7 @@ main {
 .container .card .contentBx {
     position: relative;
     margin-top: 20px;
-    text-align: center;
+    text-align: justify;
 }
 
 .container .card .contentBx h2 {
@@ -124,6 +144,9 @@ main {
     font-weight: 700;
     font-size: 1.4em;
     letter-spacing: 2px;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 5px;
 }
 
 .container .card .contentBx p {
@@ -159,16 +182,17 @@ main {
     transform: scale(0.98);
 }
 
-.experience {
+.competences {
     border-radius: 15px;
     padding: 20px;
 }
 
+.competences h2,
 .experience h2 {
     text-align: center;
 }
 
-.experience .skills {
+.competences .skills {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -184,24 +208,24 @@ main {
     justify-content: space-evenly;
 }
 
-.experience .skills .gradient_border {
+.competences .skills .gradient_border {
     position: relative;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(7%, #ebf5fc), color-stop(52%, rgba(50, 163, 177, 0.500438)), to(#ebf5fc));
     background: linear-gradient(180deg, #ebf5fc 7%, rgba(50, 163, 177, 0.500438) 52%, #ebf5fc 100%);
     width: calc(100% + 3px);
 }
 
-.experience .skills .left_part,
-.experience .skills .right_part {
+.competences .skills .left_part,
+.competences .skills .right_part {
     width: 50%;
 }
 
-.experience .skills .skill_box {
+.competences .skills .skill_box {
     background: #ebf5fc;
     width: calc(100% - 3px);
 }
 
-.experience .skills .skill {
+.competences .skills .skill {
     height: 40px;
     width: 100%;
     display: -webkit-box;
@@ -219,19 +243,20 @@ main {
     justify-content: space-evenly;
 }
 
-.experience .skills .skill h3 {
-    width: auto;
-    font-size: 18px;
+.competences .skills .skill h3 {
+    width: 100px;
+    font-size: 16px;
+    text-align: center;
 }
 
-.experience .skills .skill .skill_bar {
+.competences .skills .skill .skill_bar {
     width: 60%;
     height: 15px;
     background: #888;
     border-radius: 5px;
 }
 
-.experience .skills .skill .skill_bar .js_skill {
+.competences .skills .skill .skill_bar .js_skill {
     width: 80%;
     height: 100%;
     color: #FFF;
@@ -240,4 +265,88 @@ main {
     text-align: right;
     background: #32a3b1;
     border-radius: 5px 0 0 5px;
+}
+
+.competences .skills .skill .skill_bar .html_skill,
+.competences .skills .skill .skill_bar .css_skill {
+    width: 90%;
+    height: 100%;
+    background: #32a3b1;
+    border-radius: 5px 0 0 5px;
+}
+
+.competences .skills .skill .skill_bar .php_skill,
+.competences .skills .skill .skill_bar .sql_skill {
+    width: 65%;
+    height: 100%;
+    color: #FFF;
+    font-size: 12px;
+    padding-right: 8px;
+    text-align: right;
+    background: #32a3b1;
+    border-radius: 5px 0 0 5px;
+}
+
+.competences .skills .skill .skill_bar .jv_skill {
+    width: 75%;
+    height: 100%;
+    color: #FFF;
+    font-size: 12px;
+    padding-right: 8px;
+    text-align: right;
+    background: #32a3b1;
+    border-radius: 5px 0 0 5px;
+}
+
+.experience {
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.experience .exp_box {
+    margin-bottom: 10px;
+    height: calc(87px + 3px);
+    background: linear-gradient(90deg, #ebf5fc 0%, rgba(50, 163, 177, 0.500438) 52%, #ebf5fc 100%);
+}
+
+.experience .exp_box .exp {
+    background: #ebf5fc;
+    height: calc(100% - 3px);
+    margin-bottom: 10px;
+}
+
+.experience .exp_box:last-child {
+    height: 100%;
+}
+
+.experience .exp_box .exp h5 {
+    margin: 0;
+    color: #32a3b1;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    background: #32a3b1;
+    color: #FFF;
+    font-size: 25px;
+    text-align: center;
+}
+
+.contact div {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.contact div a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.contact ul li.mail i {
+    font-size: 25px;
+}
+
+.contact ul li.mail {
+    font-size: 16px;
 }
