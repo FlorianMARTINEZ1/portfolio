@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ebf5fc;
+    min-height: 300vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ebf5fc;
+    z-index: 3;
+}
+
+header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    height: 60px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #32a3b1;
+    -webkit-box-shadow: -6px -6px 20px white, 6px 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: -6px -6px 20px white, 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+header nav div {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+}
+
+header nav div p {
+    line-height: 30px;
+    font-size: 25px;
+}
+
+header nav div:hover {
+    -webkit-box-shadow: -6px -6px 20px rgba(0, 0, 0, 0.1), 6px 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: -6px -6px 20px rgba(0, 0, 0, 0.1), 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    margin-top: 80px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    background: #ebf5fc;
+    text-align: justify;
+}
+
+.shadow {
+    -webkit-box-shadow: -6px -6px 20px white, 6px 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: -6px -6px 20px white, 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.presentation {
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.projet {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    padding: 40px 30px;
+    background: #ebf5fc;
+    border-radius: 40px;
+}
+
+.container .card:hover {
+    -webkit-box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.5), inset 6px 6px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.5), inset 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.container .card .imgBx {
+    position: relative;
+    text-align: center;
+}
+
+.container .card .imgBx img {
+    max-width: 100%;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.container .card .contentBx {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container .card .contentBx h2 {
+    color: #32a3b1;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+}
+
+.container .card .contentBx p {
+    color: #32a3b1;
+}
+
+.container .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 40px;
+    color: #32a3b1;
+    font-size: 16px;
+    text-decoration: none;
+    -webkit-box-shadow: -4px -4px 15px white, 4px 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: -4px -4px 15px white, 4px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container .card .contentBx a:hover {
+    -webkit-box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5), inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5), inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .card a:hover span {
+    display: block;
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+}
+
+.container .card:hover .imgBx,
+.container .card:hover .contentBx {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+}
+
+.experience {
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.experience h2 {
+    text-align: center;
+}
+
+.experience .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+.experience .skills .gradient_border {
+    position: relative;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(7%, #ebf5fc), color-stop(52%, rgba(50, 163, 177, 0.500438)), to(#ebf5fc));
+    background: linear-gradient(180deg, #ebf5fc 7%, rgba(50, 163, 177, 0.500438) 52%, #ebf5fc 100%);
+    width: calc(100% + 3px);
+}
+
+.experience .skills .left_part,
+.experience .skills .right_part {
+    width: 50%;
+}
+
+.experience .skills .skill_box {
+    background: #ebf5fc;
+    width: calc(100% - 3px);
+}
+
+.experience .skills .skill {
+    height: 40px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+.experience .skills .skill h3 {
+    width: auto;
+    font-size: 18px;
+}
+
+.experience .skills .skill .skill_bar {
+    width: 60%;
+    height: 15px;
+    background: #888;
+    border-radius: 5px;
+}
+
+.experience .skills .skill .skill_bar .js_skill {
+    width: 80%;
+    height: 100%;
+    color: #FFF;
+    font-size: 12px;
+    padding-right: 8px;
+    text-align: right;
+    background: #32a3b1;
+    border-radius: 5px 0 0 5px;
+}

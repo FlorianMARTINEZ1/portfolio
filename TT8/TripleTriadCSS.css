@@ -1,0 +1,208 @@
+#html {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: cadetblue;
+    background-image: url("./img/FF8.jpg");
+    font-family: Arial, sans-serif;
+}
+
+header {
+    margin-bottom: 0%;
+}
+
+#menuDroite {
+    margin-right: 0px;
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 85%;
+    }
+}
+
+#dropdown1 {
+    top: -64px;
+    background: rgba(10, 24, 40);
+}
+
+#dropdown1 li:hover {
+    background: rgb(21, 42, 53);
+}
+
+#lol {
+    background-image: url(./img/lol.jpg);
+}
+
+@font-face {
+    font-family: 'mikado';
+    src: url('./mikado/MikadoBold_DEMO.otf');
+}
+
+#boutonSon {
+    right: 0px;
+    top: 65px;
+    position: fixed;
+}
+
+#form {
+    opacity: 1;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 7%;
+}
+
+#backform {
+    background-color: white;
+}
+
+legend {
+    text-align: center;
+}
+
+img {
+    transition-property: width, margin-left;
+    transition-duration: 0.5s;
+    margin-left: 0px;
+    width: 100px;
+    height: 100px;
+    margin-right: 0;
+}
+
+
+/*===Affichage partie===*/
+
+div {
+    height: 104px;
+}
+
+.plateau {
+    margin: auto;
+    margin-top: 100px;
+    width: 318px;
+    height: 333px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*--Création plateau 3par3---*/
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 4px;
+    grid-row-gap: 1px;
+}
+
+.case {
+    background-color: rgba(55, 71, 79, 0.6);
+    border: 2px solid rgba(20, 20, 20, 0.8);
+}
+
+.cards {
+    margin: auto;
+    margin-top: 15%;
+    width: 318px;
+    height: 109px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+}
+
+h4.nickname {
+    margin-top: 20%;
+    border-radius: 50px;
+    color: #549aab;
+    font-family: 'mikado';
+}
+
+h4.score {
+    font-family: 'mikado';
+    color: cyan;
+    border-bottom: 3px solid #549aab;
+    border-radius: 20px;
+    width: 10%;
+    margin-left: 40%;
+}
+
+.tonTour {
+    text-shadow: 0 0 10px #111f22, 0 0 20px #111f22, 0 0 30px #111f22, 0 0 40px #ffffff, 0 0 70px #ffffff, 0 0 80px #ffffff, 0 0 100px #ffffff, 0 0 150px #ffffff;
+    opacity: 1;
+}
+
+.cards1 {
+    margin-top: 5%;
+    margin-left: 18%;
+    width: 211px;
+    height: 109px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+}
+
+.case1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.case2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.case3 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.case4 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.case5 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.case6 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.case7 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.case8 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.case9 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+
+/*===Fin Affichage Partie===*/

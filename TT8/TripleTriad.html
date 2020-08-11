@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html id="html">
+
+<head>
+    <meta charset="utf-8">
+    <title>Projet Triple Triad</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize: Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="./TripleTriadCSS.css">
+
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!--main du joueur -->
+    <div id="plateaujeu" class="container jeu">
+        <div class="row">
+            <div class="col s4 gauche">
+                <h4 id="un" class="center nickname">joueur1</h4>
+                <div class="cards">
+                    <div class="case"><img id="drag1" class="67" alt="" ondragstart="drag(event)" src="./FF8/Mithra.bleue.jpg" draggable="true"></div>
+                    <div class="case"> <img id="drag2" class="30" alt="" ondragstart="drag(event)" src="./FF8/Eiffel.bleue.jpg" draggable="true"></div>
+                    <div class="case"> <img id="drag3" class="100" alt="" ondragstart="drag(event)" src="./FF8/Taurux.bleue.jpg" draggable="true"></div>
+                </div>
+                <div class="last cards1">
+                    <div class="case"> <img id="drag4" class="103" alt="" ondragstart="drag(event)" src="./FF8/Tomberry Sr.bleue.jpg" draggable="true"></div>
+                    <div class="case"> <img id="drag5" class="84" alt="" ondragstart="drag(event)" src="./FF8/Protesis.bleue.jpg" draggable="true"></div>
+                </div>
+                <h4 id="score-un" class="center score">5</h4>
+            </div>
+            <!--Fin de la main -->
+            <!-- Plateau -->
+            <div class="col s4">
+                <div class="plateau">
+                    <div class="case case1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="case case2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="case case3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="case case4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="case case5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="case case6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="case case7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="case case8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="case case9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+            </div>
+            <!--Fin plateau-->
+            <!--main du joueur -->
+            <div class="col s4 droite">
+                <h4 id="deux" class="center nickname">joueur 2</h4>
+                <div class="cards">
+                    <div class="case"> <img id="drag6" class="47" alt="" ondragstart="drag(event)" src="./FF8/Hera.rouge.jpg" draggable="false"></div>
+                    <div class="case"> <img id="drag7" class="75" alt="" ondragstart="drag(event)" src="./FF8/Ondine.rouge.jpg" draggable="false"></div>
+                    <div class="case"> <img id="drag8" class="16" alt="" ondragstart="drag(event)" src="./FF8/Berseker.rouge.jpg" draggable="false"></div>
+                </div>
+                <div class="last cards1">
+                    <div class="case"> <img id="drag9" class="24" alt="" ondragstart="drag(event)" src="./FF8/Cid.rouge.jpg" draggable="false"></div>
+                    <div class="case"> <img id="drag10" class="76" alt="" ondragstart="drag(event)" src="./FF8/Orbital.rouge.jpg" draggable="false"></div>
+                </div>
+                <h4 id="score-deux" class="center score">5</h4>
+            </div>
+            <!--Fin de la main -->
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./script/Card.js"></script>
+    <script type="text/javascript" src="./script/ChercheCarte.js"></script>
+    <script type="text/javascript" src="./script/Joueur.js"></script>
+    <script type="text/javascript" src="./script/Game.js"></script>
+    <script type="text/javascript" src="./script/main.js"></script>
+
+    <footer>
+
+    </footer>
+
+
+    <script src="./general.js"></script>
+
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+</body>
+
+</html>
