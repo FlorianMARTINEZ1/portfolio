@@ -360,7 +360,7 @@ span.highlight {
         height: 100%;
     }
     #expériences.experience .exp_box {
-        background-color: #ebf5fc;
+        background: #ebf5fc;
     }
     .competences .skills {
         display: inline;
