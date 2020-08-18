@@ -382,4 +382,7 @@ span.highlight {
     .detail {
         display: none;
     }
+    .experience .exp_box .exp {
+        height: calc(100% - 1px);
+    }
 }
