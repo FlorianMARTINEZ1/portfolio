@@ -230,6 +230,7 @@ span.highlight {
 
 .experience .exp_box:last-child {
     height: 100%;
+    margin-bottom: 0;
 }
 
 #alionax {
