@@ -22,6 +22,10 @@
         z-index: 3;
     }
     
+    header nav.phone-menu {
+        display: none;
+    }
+    
     header nav.main-menu {
         display: -webkit-box;
         display: -ms-flexbox;
