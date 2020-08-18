@@ -228,9 +228,12 @@ span.highlight {
     margin-bottom: 10px;
 }
 
+.experience .exp_box .exp:last-child {
+    margin-bottom: 0;
+}
+
 .experience .exp_box:last-child {
     height: 100%;
-    margin-bottom: 0;
 }
 
 #alionax {
